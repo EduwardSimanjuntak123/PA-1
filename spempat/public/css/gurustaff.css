@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 800;
+    /* Ubah warna latar belakang body */
+}
+
+/* CSS untuk header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00A9FF;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    background: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-item a:hover {
+    background: #77C8FE;
+}
+
+.navbar-nav .nav-item a {
+    color: #fff;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+/* Untuk header */
+@media (max-width: 768px) {
+    .logo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-item a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    .text-light h2 {
+        margin-left: 20px;
+        width: auto;
+    }
+
+    .text-light h3,
+    .text-light h4,
+    .text-light p {
+        padding-left: 20px;
+    }
+
+    .shape {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+/*tampilan awal*/
+.tampilan{
+    background-image:url(/img/2.jpg);
+    background-size: cover;
+    height: 649px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tampilan h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+/*tampilan isi*/
+.isi{
+    background-image: url(/img/1.jpg);
+    background-size: cover;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.isi h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    padding: 50px;
+}
+.isi p{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    height: 600px;
+    padding: 20px;
+}
+
+.list1 {
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+.total h6 {
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.total {
+    padding: 50px;
+}
+
+  /*Informasi/Kontak(footer)*/
+  .kontak {
+    margin: 30px;
+  }
+  
+  .box {
+    background: rgba(217, 217, 217, 0.25);
+    margin: 10px;
+    padding: 15px;
+    color: #fff;
+  }
+  
+  .info {
+    text-align: left;
+    display: flex;
+  }
+  
+  .info h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline black;
+  }
+  
+  .info h4 {
+    font-size: 30px;
+  }
+  
+  .icon {
+    margin-bottom: 101px;
+  }
+  
+  /*footer*/
+  .footer {
+    
+    margin-top: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+  
+  }
+ footer{
+  background-color: #00A9FF;
+ }
+  .footer h4 {
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+  }

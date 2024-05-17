@@ -1,0 +1,463 @@
+body {
+  margin: 0;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 800; /* Ubah warna latar belakang body */
+}
+
+/* CSS untuk header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00A9FF;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 65px;
+  height: 65px;
+  margin-right: 20px;
+  background: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item a:hover { 
+  background: #77C8FE;
+}
+
+.navbar-nav .nav-item a {
+  color: #fff;
+}
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+/* Untuk header */
+@media (max-width: 992px) {
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .navbar-nav .nav-item a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  /* .text-light h2 {
+    margin-left: 20px;
+    width: auto;
+  } */
+
+  .text-light h3,
+  .text-light h4,
+  .text-light p {
+    padding-left: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+}
+
+
+/*Kata Sambutan*/
+.hero {
+  background-color: #fff;
+  padding: 3%;
+  position: relative;
+}
+
+.scroll img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 0% 50%);
+}
+
+.sambutan {
+  height: 500px;
+  border-radius: 15px;
+  background: #7fd4ff;
+}
+/* 
+.text-light h2 {
+  text-align: center;
+  margin: 40px;
+  margin-left: 50px;
+  color: purple;
+  background-color: grey;
+  width: 300px;
+  border-radius: 50px;
+} */
+
+.text-light h3 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  margin-top: 20%;
+  padding-left: 80px;
+  font-size: 40px;  
+}
+
+.text-light h4 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding-left: 80px;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.text-light p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  text-align: left;
+  padding-left: 80px;
+}
+/*android*/
+@media only screen and (max-width : 576px){
+  .sambutan{
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .scroll{
+    display: none;
+  }
+
+  .text-light h3, .text-light h4{
+    font-size: 25px;
+    padding-left: 25px;
+    margin-top: 10px;
+  }
+  .text-light p{
+    font-size: 18px;
+    padding-left: 30px;
+  }
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 577px) and (max-width : 992px){
+  .sambutan{
+    height: auto;
+    margin-top: 1rem;
+  }
+  .scroll img{
+    margin-top: 2rem;
+    padding-right: 5rem;
+    width: 350px;
+    height: 250px;
+  }
+
+  .text-light h3, .text-light h4{
+    font-size: 30px;
+  }
+  .text-light p{
+    font-size: 18px;
+  }
+}
+
+
+
+/* CSS untuk person section */
+.person {
+  background-image: url(/img/murid.jpg);
+  background-size: cover;
+}
+
+.list {
+  height: 40px;
+  background: linear-gradient(90deg, #00a9ff 0%, #e6e8ff 100%);
+}
+.person .col{
+  flex-wrap: wrap;
+}
+.person img{
+  width: 100%;
+  height: auto;
+}
+.hero1 h2{
+  font-size: 40px;
+}
+.hero1 h3{
+  font-size: 30px;
+}
+.hero1 p{
+  font-size: 20px;
+}
+.hero1 {
+  padding-left: 100px;
+  margin-top: 60px;
+  font-weight: bold;
+  text-align: left;
+}
+/*android*/
+@media only screen and (max-width : 576px){
+  .hero1 {
+    padding-left: 0.7rem;
+    margin-top: 0.7rem;
+  }
+  .hero1 h2{
+    font-size: 1.2rem;
+  }
+  .hero1 h3{
+    font-size: 1rem;
+  }
+  .hero1 p{
+    font-size: 0.7rem;
+  }
+  .person img{
+    display: none;
+  }
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 577px) and (max-width : 992px){
+  .hero1 {
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .hero1 h2{
+    font-size: 1.9rem;
+  }
+  .hero1 h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .hero1 p{
+    font-size: 0.9rem;
+  }
+  .person img{
+    width: 19.5rem;
+    height: auto;
+    margin-top: 2rem;
+  }
+}
+
+
+/* Berita*/
+.latar {
+  background-color: #fff;
+}
+
+.berita {
+  padding-bottom: 30px;
+}
+
+.berita h1 {
+  padding-left: 15px;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.berita h2 {
+  font-weight: bold;
+}
+
+.berita h3 {
+  font-size: 18px;
+}
+
+.news {
+  background: #89CFF3;
+  padding: 25px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.news img {
+  width: 30%;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+}
+/*android*/
+@media only screen and (max-width : 576px){
+  .berita h1{
+    font-size: 20px;
+  }
+  .berita h2{
+    font-size: 18px;
+  }
+  .berita h3{
+    font-size: 15px;
+  }
+  .news img{
+    margin-left: 10px;
+    height: auto;
+  }
+}
+
+/*android landscape dan tablet*/
+@media only screen and (min-width: 577px) and (max-width : 992px){
+  .berita h1{
+    font-size: 30px;
+  }
+  .berita h2{
+    font-size: 30px;
+  }
+  .berita h3{
+    font-size: 25px;
+  }
+  .news img{
+    height: auto;
+  }
+}
+
+
+/*Informasi/Kontak(footer)*/
+footer{
+  background-color: #00A9FF;
+}
+.kontak {
+  margin: 30px;
+}
+
+.box {
+  background: rgba(217, 217, 217, 0.25);
+  padding: 15px;
+  color: #fff;
+}
+.box .tautan{
+  display: flex;
+}
+.tautan .link {
+  padding-right: 50px;
+}
+.box .sosmed{
+  margin-bottom: 30px;
+}
+.up .info {
+  text-align: left;
+  display: flex;
+}
+
+.up h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline black;
+}
+
+.up h4 {
+  font-size: 30px;
+}
+
+.icon {
+  margin-bottom: 58px;
+  font-size: 3.5rem;
+}
+
+/*android*/
+@media only screen and (max-width : 576px){
+  .up h2{
+    font-size: 25px;
+  }
+  .up h4{
+    font-size: 18px;
+  }
+  .icon{
+    font-size: 2.8rem;
+  }
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 577px) and (max-width : 992px){
+  .up h2{
+    font-size: 30px;
+  }
+  .up h4{
+    font-size: 23px;
+  }
+}
+
+/*footer*/
+.footer {
+  margin-top: 20px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer i{
+  font-size: 4rem;
+}
+.footer h4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  margin-top: 10px;
+}
+.footer .info{
+  display: flex;
+  flex-direction: row;
+}
+/*android*/
+@media only screen and (max-width : 576px){
+  .footer i{
+    font-size: 2.5rem;
+  }
+  .footer h4{
+    font-size: 15px;
+  }
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 577px) and (max-width : 992px){
+  .footer i{
+    font-size: 3rem;
+  }
+}

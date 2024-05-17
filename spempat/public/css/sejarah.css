@@ -1,0 +1,183 @@
+
+body {
+    margin: 0;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  /* CSS untuk header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00A9FF;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logo img {
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    background: none;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 20px;
+  }
+  
+  .navbar-nav .nav-item a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar-nav .nav-item a:hover { 
+    background: #77C8FE;
+  }
+  
+  .navbar-nav .nav-item a {
+    color: #fff;
+  }
+  
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+  
+
+/*tampilan awal*/
+.info h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.info .first {
+    background: linear-gradient(0deg, #7FD4FF, #7FD4FF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+    text-align: center;
+    padding: 190px;
+}
+
+.info .second {
+    background-image: url(/img/visimisi.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+/*sejarah*/
+.kedua{
+    background-color: #fff;
+    padding: 80px;
+}
+.sejarah{
+    background-image: url(/img/sejarah_gelap.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 120px;
+    border-radius: 10px; 
+}
+.sejarah h1{
+    text-align: center;
+    font-weight: bold;
+}
+.sejarah h4{
+    font-size: 38px;
+}
+
+
+
+
+
+  /*Informasi/Kontak(footer)*/
+  .kontak {
+    margin: 30px;
+  }
+  
+  .box {
+    background: rgba(217, 217, 217, 0.25);
+    margin: 10px;
+    padding: 15px;
+    color: #fff;
+  }
+  
+  .info {
+    text-align: left;
+    display: flex;
+  }
+  
+  .info h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline black;
+  }
+  
+  .info h4 {
+    font-size: 30px;
+  }
+  
+  .icon {
+    margin-bottom: 101px;
+  }
+  
+  /*footer*/
+  .footer {
+    
+    margin-top: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+  
+  }
+ footer{
+  background-color: #00A9FF;
+ }
+  .footer h4 {
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+  }
